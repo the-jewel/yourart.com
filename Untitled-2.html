@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Multi step Form</title>
+  <link rel="stylesheet" href="Untitled-2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+  <div class="container">
+    <header>CONTACT US</header>
+
+    <div class="progress-bar">
+      <div class="step">
+        <p>Name </p>
+        <div class="bullet">
+          <span>1</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+
+      <div class="step">
+        <p>Contact </p>
+        <div class="bullet">
+          <span>2</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+
+      <div class="step">
+        <p>Birth </p>
+        <div class="bullet">
+          <span>3</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <p>Submit </p>
+        <div class="bullet">
+          <span>4</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+    </div>
+
+    <div class="form-outer">
+      <form onsubmit="sendEmail(); reset(); return false">
+        <div class="page slide-page">
+          <div class="title">Basic Info</div>
+          <div class="field">
+            <div class="label">First Name</div>
+            <input type="text" id="firstname" >
+          </div>
+
+
+          <div class="field">
+            <div class="label">Last Name</div>
+            <input type="text" id="lastname" >
+          </div>
+
+
+          <div class="field">
+            <button class="firstNext next">Next</button>
+          </div>
+        </div>
+
+      
+
+            <div class="page ">
+              <div class="title">Contact Info:</div>
+              <div class="field">
+                <div class="label">Email</div>
+                <input type="email" id="email" >
+              </div>
+
+
+              <div class="field">
+                <div class="label">Phone Number</div>
+                <input type="text" id="phone" >
+              </div>
+
+              <div class="field">
+                <button class="prev-1 prev">previous</button>
+                <button class="next-1 next">Next</button>
+              </div>
+            </div>
+
+            <div class="page ">
+              <div class="title">Date OF Birth:</div>
+              <div class="field">
+                <div class="label">Date</div>
+                <input type="text" id="date" >
+              </div>
+
+
+              <div class="field">
+                <div class="label">Gender</div>
+                <select id="gender">
+                  <option value="">Male</option>
+                  <option value="">Female</option>
+                </select>
+
+
+              </div>
+              <div class="field">
+                <button class="prev-2 prev">previous</button>
+                <button class="next-2 next">Next</button>
+              </div>
+            </div>
+
+            <div class="page ">
+              <div class="title">Longin Information:</div>
+              <div class="field">
+                <div class="label">Username</div>
+                <input type="text" id="username" >
+              </div>
+
+              <div class="field">
+                <button class="prev-3 prev">previous</button>
+                <button class="submit" id="submit" type="submit">Next</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+    </div>
+
+
+
+    <script src = "script2.js"></script>
+
+ 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          SecureToken:"7a05f1aa-7988-4f49-aec8-eb2d8d5356fb ",
+          To: 'n57331874@gmail.com',
+          From: "n57331874@gmail.com",
+          Subject: "تم تسجيل الدخول بنجاح",
+          Body: " firstname: " + document.getElementById("firstname").value
+                  +"<br> lastname : " + document.getElementById("lastname").value 
+                   + "<br> email : " + document.getElementById("email").value 
+                    +"<br> phone : " + document.getElementById("phone").value 
+                   + "<br> date : " + document.getElementById("date").value 
+                    +"<br> gender : " + document.getElementById("gender").value 
+                    +"<br> username : " + document.getElementById("username").value
+
+        }).then(
+          message => alert("massage sent")
+        );
+      }
+    </script>    
+
+
+</body>
+
+</html>

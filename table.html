@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Refreshing Table</title>
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
+</head>
+<body>
+
+<div id="table-container">
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    <!-- Table rows will be inserted here by JavaScript -->
+  </table>
+</div>
+
+<script>
+// Function to refresh table
+function refreshTable() {
+  // This is where you would normally make an AJAX call to retrieve new data.
+  // For demonstration, we will just add a new row with random data.
+
+  // Create a new row and cells
+  var newRow = document.createElement('tr');
+  var newId = document.createElement('td');
+  var newName = document.createElement('td');
+  var newEmail = document.createElement('td');
+
+  // Generate random data
+  newId.textContent = Math.floor(Math.random() * 100);
+  newName.textContent = 'Name ' + newId.textContent;
+  newEmail.textContent = newId.textContent + '@example.com';
+
+  // Append cells to row
+  newRow.appendChild(newId);
+  newRow.appendChild(newName);
+  newRow.appendChild(newEmail);
+
+  // Append row to table
+  document.querySelector("#table-container table").appendChild(newRow);
+}
+
+// Set interval to refresh table every 5 seconds
+setInterval(refreshTable, 5000);
+
+// Initial table refresh
+refreshTable();
+</script>
+
+</body>
+</html>

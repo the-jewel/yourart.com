@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="artstyle.css">
+    <title>Your Art</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+
+
+
+  table {
+    width: 97%;
+    border-collapse: collapse;
+    border-radius: 10%;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+   
+   
+    
+  }
+  th, td {
+    border: 1px solid #54372a;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #54372a;
+    text-align: center;
+    color: #f8e4be;
+  }
+  
+  .heart {
+      cursor: pointer;
+      font-size: 2rem;
+      color: #ccc;
+      transition: color 0.3s ease;
+    }
+    .liked {
+      color: #e00;
+    }
+  
+  
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">Art</a>
+            <div class="navbar">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#art" class="nav-link">Art</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="teachme.html" class="nav-link">Teach me</a>
+            </div>
+            <div class="nav-icons">
+                <a href="Untitled-2.html"><i class='bx bx-user'></i></a>
+                
+
+                <div class="menu-icon">
+                
+                    <div class="line1"></div>
+                
+                    <div class="line2"></div>
+                
+                    <div class="line3"></div>         
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="home container" id="home">
+        <div class="home-text">
+            <h1>Chick the new painting! </h1>
+            <p> warning you may fall in love with it, becuse of how freedem feeling its give </p>
+            <a href="#art" class="btn">
+                <span>Inspiration</span>
+                <i class='bx bx-up-arrow-alt'></i>
+            </a>
+        </div>
+        <img src="pic6.jpeg" alt="new" class="home-img">
+    </section>
+
+
+    <section class="services container" id="services">
+        <div class="heading">
+            <h2>Creativity takes courage <br> notch services</h2>
+        </div>
+        <div class="service-content">
+            <div class="ser-box">
+                <img src="s1.png" alt="s1">
+                <p>Painting</p>
+            </div>
+            <div class="ser-box">
+                <img src="s2.png" alt="s2">
+                <p>Colors</p>
+            </div>
+            <div class="ser-box">
+                <img src="s3.png" alt="s3">
+                <p>Brushes</p>
+            </div>
+            <div class="ser-box">
+                <img src="s4.png" alt="s4">
+                <p>Empty Painting</p>
+            </div>
+        </div>
+
+
+        <!-- Products -->
+        <section class="products container" id="art">
+            <!-- heading -->
+            <div class="heading">
+                <h2>Choose what you want to draw</h2>
+            </div>
+            <!-- products content -->
+            <div class="product-content">
+                <!-- Box 1 -->
+                <div class="product-box">
+                    <span id="heart1" class="heart" onclick="toggleLike(this)">&#x2665;</span>
+                    <img src="pic5.jpeg" alt="kid">
+                    <p>Drawing</p>
+                    <h2>An Arab boy</h2>
+                    <div class="product-info">
+                        
+                    </div>
+                </div>
+                <!-- Box 2 -->
+                <div class="product-box">
+                    <span id="heart2" class="heart" onclick="toggleLike(this)">&#x2665;</span>
+                    <img src="pic6.jpeg" alt="woman and flowers">
+                    <p>Drawing</p>
+                    <h2>Rose girl</h2>
+                    <div class="product-info">
+                        
+                    </div>
+                </div>
+                <!-- Box 3 -->
+                <div class="product-box">
+                    <span id="heart3" class="heart" onclick="toggleLike(this)">&#x2665;</span>
+                    <img src="pic4.jpeg" alt="read">
+                    <p>Drawing</p>
+                    <h2>Reading</h2>
+                    <div class="product-info">
+                      
+                    </div>
+                </div>
+                <!-- Box 4 -->
+                <div class="product-box">
+                    <span id="heart4" class="heart" onclick="toggleLike(this)">&#x2665;</span>
+                    <img src="pic3.jpeg" alt="piano and woman">
+                    <p>Drawing</p>
+                    <h2>Piano and a woman</h2>
+                    <div class="product-info">
+                       
+                    </div>
+                </div>
+                <!-- Box 5 -->
+                <div class="product-box">
+                    <span id="heart5" class="heart" onclick="toggleLike(this)">&#x2665;</span>
+                    <img src="pic2.jpeg" alt="draw">
+                    <p>Drawing</p>
+                    <h2>artist</h2>
+                    <div class="product-info">
+                       
+                    </div>
+                </div>
+                <!-- Box 6 -->
+                <div class="product-box">
+                  
+                    <span id="heart16" class="heart" onclick="toggleLike(this)">&#x2665;</span>
+                    <img src="pic1.jpeg" alt="fall">
+                    <p>Drawing</p>
+                    <h2>Falling</h2>
+                    <div class="product-info">
+                       
+                    </div>
+
+                    
+                </div>
+                <!-- Box 5 -->
+                <div class="product-box">
+                    <span id="heart5" class="heart" onclick="toggleLike(this)">&#x2665;</span>
+                    <img src="fg.jpg" alt="draw">
+                    <p>Drawing</p>
+                    <h2>Van Gogh</h2>
+                    <div class="product-info">
+                       
+                    </div>
+                </div>
+                <!-- Box 6 -->
+           
+                <div class="product-box">
+                    <span id="heart5" class="heart" onclick="toggleLike(this)">&#x2665;</span>
+                    <img src="read g.jpg" alt="draw">
+                    <p>Drawing</p>
+                    <h2>Spanish girl</h2>
+                    <div class="product-info">
+                        
+                    </div>
+                </div>
+                <!-- Box 6 -->
+                <div class="product-box">
+                    <span id="heart5" class="heart" onclick="toggleLike(this)">&#x2665;</span>
+                    <img src="catt.jpg" alt="draw">
+                    <p>Drawing</p>
+                    <h2>cat</h2>
+                    <div class="product-info">
+                        
+                    </div>
+                </div>
+            
+                </div>
+
+                
+            </div>
+        </section>
+        <!-- Team -->
+        <section class="team container" id="team">
+            <div class="heading">
+                <h2>Team Members</h2>
+            </div>
+            
+
+            <div id="table-container">
+              <table>
+                <tr>
+                    <th>Name</th>
+                </tr>
+              </table>
+            </div>
+            <script>
+                // List of names
+                var names = ["Nawal Hussain Mutanbak ", "Manal Hussain Alsubaie", "Aljouharh Mohammed Alrabi"];
+                
+                // Function to shuffle an array
+                function shuffle(array) {
+                  for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                  }
+                }
+                
+                // Function to refresh the names in the table
+                function refreshNames() {
+                  // Shuffle the names
+                  shuffle(names);
+                
+                  // Find the table body and clear existing content
+                  const tableBody = document.querySelector("#table-container table");
+                  tableBody.innerHTML = "<tr><th>Name</th></tr>"; // Reset table to just the header
+                
+                  // Add each name to the table
+                  names.forEach(function(name) {
+                    var row = tableBody.insertRow();
+                    var cell = row.insertCell();
+                    cell.textContent = name;
+                  });
+                }
+                
+                // Refresh names on page load
+                refreshNames();
+                </script>
+                
+           
+
+        </section>
+
+        <!-- footer -->
+        <section class="footer container">
+            <div class="footer-box">
+        <a href="#home" class="logo" style="color: #54372a;">Art</a>
+                <div class="social">
+                    <a href="https://chat.whatsapp.com/HnW8Fs21gFTE7a7MXMClrM"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://x.com/u_tabuk?s=11"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://t.me/+5V3AD23Xc-04MGM8"><i class='bx bxl-telegram'></i></a>
+                    <a href="https://www.youtube.com/"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+
+        <div class="footer-box">
+            <h3>About</h3>
+            <a href="#">Our Story</a>
+            <a href="#">Art</a>
+            <a href="#">Career</a>
+        </div>
+        <div class="footer-box">
+            <h3>Customers Recouress</h3>
+            <a href="#art">Arts</a>
+            <a href="#">Location</a>
+            <a href="#">Support</a>
+        </div>
+        <div class="footer-box">
+            <h3>Servicess</h3>
+            <a href="#">Payment Options</a>
+            <a href="#">Refunds & Exchages</a>
+            <a href="#">Limitation of Liabillity</a>
+        </div>
+    </section>
+    <!-- Copyright-->
+    <p class="copyright">&#169; Ashop</p>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="m.js"></script>
+    <script src="script2.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
